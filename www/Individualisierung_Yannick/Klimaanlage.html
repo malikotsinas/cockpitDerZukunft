@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Individualisierung</title>
+    </head>
+    <body>
+        
+        
+        <center><h1>Klimaanlage</h1></center>
+        
+        <br></br>
+        
+  <center>    
+<table style="width:100%">
+  
+    
+    <tr>
+    <td>AC ein</td>
+    <td><select name="ac" size="1">
+<option>Ja</option>
+<option>Nein</option>
+</select>
+ </td> 
+            <tr>
+    <td>Duftpatronen</td>
+    <td><select name="duft" size="1">
+<option>Rosenblüten</option>
+<option>Frühling</option>
+<option>Entspannung</option>
+</select>
+ </td> 
+                    <tr>
+    <td>Temperatur in Grad</td>
+    <td><select name="temp" size="1">
+<option>10</option>
+<option>11</option>
+<option>12</option>
+        <option>13</option>
+<option>14</option>
+<option>15</option>
+        <option>16</option>
+<option>17</option>
+<option>18</option>
+        <option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+        <option>24</option>
+<option>25</option>
+<option>26</option>
+        <option>27</option>
+<option>28</option>
+<option>29</option>   
+<option>30</option>
+<option>31</option>       
+<option>32</option>        
+</select>
+ </td> 
+            <tr>
+    <td>Umluft</td>
+    <td><select name="umluft" size="1">
+<option>Ein</option>
+<option>Aus</option>
+<option>Automatisch</option>
+</select>
+ </td>
+                
+                            <tr>
+    <td>Luftverteilung</td>
+    <td><select name="luftverteilung" size="1">
+<option>Scheiben</option>
+<option>Mitte</option>
+<option>Oben</option>
+<option>Unten</option>
+<option>Automatisch</option>
+</select>
+ </td>
+                                
+                                
+   <tr>
+    <td>Luftstärke</td>
+    <td>
+<form oninput="numerisch.value=auswertung.value">
+
+<input type="range" name="auswertung" min="0" max="100" value="5">
+ <output name="numerisch"></output>
+
+</form>
+</select>
+ </td>
+
+</table>
+      </center>    
+            
+    <form method="get" action="individualisierung.html">
+    
+        <br></br>
+        <button type="submit">Bestätigen und zurück zum Menü</button>
+</form>
+    
+    
+    </body>
+</html>

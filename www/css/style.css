@@ -1,0 +1,85 @@
+@font-face {
+    font-family: ContrailOne;
+    src: url(../fonts/Contrail_One/ContrailOne-Regular.ttf);
+}
+::-webkit-scrollbar { 
+    display: none; 
+}
+html, body {
+      background-image: url(../pictures/seamless_paper_texture.png);
+      background-repeat:repeat;
+      height: 100%;
+      width: 100%;
+}
+
+#wetter{
+    border-radius: 10px;
+    background-image: url(../pictures/wetter.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 260px;
+   
+}
+
+.callHelp{
+    color: white;
+    font-size: 15px;
+}
+
+.notfall{
+    font-size: 25px;
+    color: white;
+}
+
+.inhalt{
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#radio{
+    display: block;
+    height: 259px;
+}
+
+#container {
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 10px;
+    background-image: url(../pictures/congruent_outline.png);
+    background-repeat:repeat;
+    box-shadow: 1px 1px 12px;
+}
+
+.centered{
+    background-color: rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-family: ContrailOne;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: white;
+    text-align: left;
+}
+h2 {
+    font-family: ContrailOne;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: white;
+}
+h3 {
+    font-family: ContrailOne;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+    
+p {
+    text-transform: uppercase;
+    color: white;
+    font-family: "PT Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    font-size: 13px;
+}
+

@@ -1,0 +1,32 @@
+body{
+    background:url(asd/pictures/background.jpg);
+    background-size: 100%;
+}
+
+#quadrant1 {
+    border: 1px solid white;
+    width: 200px;
+    float: left;
+}
+
+#quadrant2 {
+    border: 1px solid white;
+    width: 300px;
+    float: left;
+}
+#quadrant3 {
+    border: 1px solid white;
+    width: 300px;
+   // float: left;
+}
+#quadrant4 {
+    border: 1px solid white;
+    width: 200px;
+    float: left;
+    
+}
+
+.test{
+    border: 1px solid white;
+    height: 130px;
+}

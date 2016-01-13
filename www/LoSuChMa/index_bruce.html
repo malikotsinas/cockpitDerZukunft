@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	
+	<script>
+		
+		function Zeit(){
+		var d = new Date();
+		document.getElementById("date").innerHTML = d.getDate()+"."+d.getMonth()+"."+d.getFullYear();
+		document.getElementById("time").innerHTML = d.toLocaleTimeString();
+		
+		}
+		var myVar = setInterval(function(){Zeit()},1000);
+		
+		function show_menu(){
+		var menu = document.getElementById('dropdown_menu');
+
+		if(menu.style.visibility == 'visible'){
+			menu.style.visibility = 'hidden';
+		}else {
+			menu.style.visibility = 'visible';
+		}
+		}
+		
+		function smallWindow(url,winName){
+			//alert("Holla");
+			window.open(url,winName,'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=400,height=350').focus();
+		}
+	</script>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li class="left">
+				<p onclick="show_menu();">Fahrerprofil</p>
+			</li>
+			<li class="left"><a href="notyet.html">Automobil 4.0</a></li>
+			<li class="right"><a href="notyet.html" id="date">00.00.0000</a><li>
+			<li class="right"><a href="notyet.html" id="time">00:00:00</a></li>
+		</ul>
+	</nav>
+	
+		<ul id="dropdown_menu" style="visibility:hidden;">
+			<div id="dropdown_div">
+				<li class="drop"><p onclick="smallWindow('https://www.google.de/','Fahrerprofil auswählen')">Fahrerprofil auswählen</p></li>
+				<li class="drop"><p>Fahrerprofil anlegen</p></li>
+			</div>
+		</ul>
+		
+	 <div class="container theme-showcase" role="main">
+      <div id="sos" onclick="location.href='notyet.html';">
+        <h1>SOS</h1>
+      </div>
+	  
+	  
+      <p id="line1">
+        <button type="button" class="btn btn-lg btn-default" onclick="location.href='notyet.html';"><img src="car.png" width="170" height="80" alt="submit"/></button>
+        <button type="button" class="btn btn-lg btn-default" onclick="location.href='notyet.html';" style="float:right;"><img src="maps.png" width="110" height="80" alt="submit"/></button>
+        
+      </p>
+       <p>
+        <button type="button" class="btn btn-lg btn-default" onclick="location.href='notyet.html';"><img src="media.png" width="130" height="80" alt="submit"/></button>
+        <button type="button" class="btn btn-lg btn-default" onclick="location.href='notyet.html';" style="float:right;"><img src="setup.png" width="120" height="80" alt="submit"/></button>
+      </p>
+
+
+
+
+
+
+
+    </div> <!-- /container -->
+</body>
+</html>
