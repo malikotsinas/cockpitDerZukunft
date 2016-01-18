@@ -10,8 +10,22 @@ html, body {
       background-repeat:repeat;
       height: 100%;
       width: 100%;
+      font-family: ContrailOne;
 }
 
+#cockpit{
+    background-image: url(../Cockpit.jpg);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+}
+
+.anpassen{
+    width: 100%;
+}
+    
 #wetter{
     border-radius: 10px;
     background-image: url(../pictures/wetter.jpg);
@@ -31,6 +45,9 @@ html, body {
     color: white;
 }
 
+.whitefont{
+    color: white;
+}
 .inhalt{
     border: 2px solid white;
     border-radius: 10px;

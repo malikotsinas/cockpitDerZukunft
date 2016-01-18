@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Above must come first -->
+        
+              
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.js."></script> 
+        
+          <!-- Menü -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+        <link rel="stylesheet" type="text/css" href="font-awesome-4.5.0/css/font-awesome.min.css"/>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+        
+        
+        <!-- Main CSS --> 
+         <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <!-- Hier fängt der Content an -->
+        <div id="content-wrapper">
+            <!-- Abstand nach oben -->
+            <div class="col-md-12 col-sm-12 col-xs-12" style="height: 30px;"></div>
+            
+            <!-- Container für die Elemente -->
+            <div class="col-md-12 col-sm-12 col-xs-12" >
+                <!-- Abstand links -->
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                <!-- Content Bereich -->
+                <div class="col-md-10 col-sm-10 col-xs-10 centered" id="container"> 
+  
+        <center>Individualisierungsmenü</center>
+        
+        <!-- Hier wird das Bild des Autoinnenraums dargestellt -->
+        <img src="B136744.jpg" alt="Selfhtml" usemap="#Mapi" style="align: center;">
+        
+        <!-- Hier wird die Area Map für das Bild erstellt -->
+        <map name="Mapi" id="Mapi">
+            
+            <!-- Hier werden die einzelnen Areas für die verschiedenen Punkte definiert und mit Links versehen -->
+            <area shape="circle" coords="410,281,15,15" alt="" href="Rückenlehne.html">
+            <area shape="circle" coords="520,286,15,15" alt="" href="Sitz.html">
+            <area shape="circle" coords="554,224,15,15" alt="" href="Console.html">
+            <area shape="circle" coords="580,161,15,15" alt="" href="Klimaanlage.html">
+            <area shape="circle" coords="506,144,15,15" alt="" href="Lenkrad.html">
+            <area shape="circle" coords="317,179,15,15" alt="" href="Anlage.html">
+            <area shape="circle" coords="183,89,15,15" alt="" href="Personalisierung.html">
+        </map>
+        <!-- Ende Area Map -->
+        <script>
+
+            /*
+                Hier wird ein EventListener hinzugefügt, welcher die Punkte überprüft.
+            */
+            window.addEventListener ('load', function () {
+            var map = document.querySelectorAll('#Mapi area');
+            for (var i=0; i<map.length; i++) {
+	           if (map[i].addEventListener) {
+	           map[i].addEventListener('touchstart', swap, false);
+	           map[i].addEventListener('mouseover', swap, false);
+	           }
+            }
+            function swap(ev) {
+	           var lan = this.getAttribute('alt');
+	           document.getElementById('deutschland').setAttribute('src','bilder/' + lan);
+	           return false;
+            }
+            });
+        </script>       
+                </div>
+                <!-- Abstand rechts -->
+                <div class="col-md-1 col-sm-1 col-xs-1"></div>
+                </div>
+                
+        </div>
+            <!-- Container für die Navigation -->
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <!-- Start Nav Structure -->
+                <button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+                      <!-- Die einzelnen Menü Elemente -->
+				      <li><a href="seite1.html"><span class="fa fa-cloud"></span></a></li>
+				      <li><a href="individualisierung.html"><span class="fa fa-car"></span></a></li>
+				      <li><a href="index.html"><span class="fa icon-home"></span></a></li>
+				      <li><a href="hilfe.html"><span class="fa fa-plus-square"></span></a></li>
+				      <li><a href="Editor/editor.html"><span class="fa fa-rotate-270 fa-pencil"></span></a></li>
+				     </ul>
+				</div>
+            </div>   
+        </div>
+            <!-- Div für das Overlay (schwarz) -->
+            <div id="cn-overlay" class="cn-overlay"></div>
+				<!-- End Nav Structure -->
+                <!-- Benötigte Skripte für das Menü-->
+                <script src="js/polyfills.js"></script>
+                <script src="js/demo1.js"></script>		
+				
+        </div>
+    </body>
+</html>

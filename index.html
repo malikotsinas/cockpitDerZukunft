@@ -27,7 +27,7 @@
         <!-- Main CSS --> 
          <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
-    <body>
+    <body>        
         <!-- Hier fängt der Content an -->
         <div id="content-wrapper">
             <!-- Abstand nach oben -->
@@ -42,10 +42,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-6 inhalt" id="wetter" style="height: 257px;">
                         <!-- Wetter -->
                         <!-- Abstand Wetter links -->
-                       <div class="col-md-4 col-sm-2 col-xs-0"></div>
+                       <div class="col-md-2 col-sm-2 col-xs-0"></div>
                     
                         <!-- Wetter Container --> 
-                        <div class="col-md-4 col-sm-8 col-xs-12">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
                         
                         <!-- Wetterbox -->
                         <div class="col-md-12 col-sm-12 col-xs-12" style="height: 40px;"></div>
@@ -58,7 +58,7 @@
                         </div>
                         </div>
                         <!-- Abstand Wetter rechts --> 
-                        <div class="col-md-4 col-sm-2 col-xs-0"></div>
+                        <div class="col-md-2 col-sm-2 col-xs-0"></div>
                         
                     </div>
                                         
@@ -182,7 +182,7 @@
                                         <!-- Radio -->
                     <div class="col-md-6 col-sm-6 col-xs-6 inhalt" id="radio">
                         <!-- iframe für die Einbindung des Radios -->
-                        <iframe src="http://player.radioforge.com/v2/shoutcast.html?radiolink=http://demos.whsh4u.com:9002/;&radiotype=shoutcast2&bcolor=rgba(255,255,255, 0.5)&image=http://www.animierte-gifs.net/data/media/102/animierte-musik-bilder-30.gif&title=die besten Tunes fuer das autonome Fahren!&artist=CarConnect Radio" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" width="100%;" height="200px;"></iframe>
+                        <iframe style="margin-top: 20px;align: center;" src="http://player.radioforge.com/v2/shoutcast.html?radiolink=http://demos.whsh4u.com:9002/;&radiotype=shoutcast2&bcolor=rgba(255,255,255, 0.05)&image=http://www.animierte-gifs.net/data/media/102/animierte-musik-bilder-30.gif&title=die besten Tunes fuer das autonome Fahren!&artist=CarConnect Radio" scrolling="no" frameborder="0" marginheight="0" marginwidth="0" width="100%;" height="200px;"></iframe>
                     </div>
                     <!-- Radio Ende -->
                 </div>
@@ -192,19 +192,36 @@
             <!-- Container für die Navigation -->
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <!-- Start Nav Structure -->
-                <button class="cn-button" id="cn-button">+</button>
+                <button class="cn-button" id="cn-button" style="font-family: Arial;">+</button>
 				<div class="cn-wrapper" id="cn-wrapper">
 				    <ul>
                       <!-- Die einzelnen Menü Elemente -->
 				      <li><a href="seite1.html"><span class="fa fa-cloud"></span></a></li>
-				      <li><a href="seite2.html"><span class="fa fa-car"></span></a></li>
-				      <li><a href="index.html"><span class="icon-home"></span></a></li>
+				      <li><a href="individualisierung.html"><span class="fa fa-car"></span></a></li>
+				      <li><a href="index.html"><span class="fa icon-home"></span></a></li>
 				      <li><a href="hilfe.html"><span class="fa fa-plus-square"></span></a></li>
-				      <li><a href="seite4.html"><span class="icon-envelope-alt"></span></a></li>
+				      <li><a href="Editor/editor.html"><span class="fa fa-rotate-270 fa-pencil"></span></a></li>
 				     </ul>
 				</div>
             </div>   
         </div>
+         <!-- Willkommensbildschirm -->
+            <div id="cockpit">
+                <img src="Cockpit.jpg" class="anpassen" alt="Willkommensbildschirm"/>
+            </div>
+        
+        <!-- jQuery für den Willkommensbildschirm -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+        <!-- Script wird über Webadresse eingebunden -->
+        <script type="text/javascript"> 
+            //Beim Laden der Seite wird die Funktion aufgerufen
+            $(document).ready(function(){ 
+            //Das Element mit der ID cockpit wird ausgeblendet über einen Zeitraum von 1,5 Sekunden
+            //Mit einer Verzögerung von 3,5 Sekunden
+            $("#cockpit").delay(3500).fadeOut(1500); 
+            }); 
+
+        </script> 
             <!-- Div für das Overlay (schwarz) -->
             <div id="cn-overlay" class="cn-overlay"></div>
 				<!-- End Nav Structure -->
